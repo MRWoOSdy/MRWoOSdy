@@ -1,0 +1,31 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class NewBehaviourScript : MonoBehaviour
+{
+    string ismim;
+    int yasim = 12;
+    float kusurluyas = 12.8f;
+    double dahakusurluyas = 12.8834;
+    bool acikmi = true;
+
+
+    void Start()
+    {
+        ismim = "WoOsdy";
+
+        Debug.Log(ismim);
+        Debug.Log(yasim);
+        Debug.Log(kusurluyas);
+        Debug.Log(dahakusurluyas);
+        Debug.Log(acikmi);
+
+        StartCoroutine(examplevoid());
+    }
+    IEnumerator examplevoid()
+    {
+        yield return new WaitForSeconds(5);
+        Debug.Log("hello");
+    }
+}
